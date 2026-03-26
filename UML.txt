@@ -1,0 +1,38 @@
+┌─────────────────────────────────┐
+│            Device               │
+│─────────────────────────────────│
+│ - name: str                     │
+│ - price: float                  │
+│ - stock: int                    │
+│ - warranty_period: int          │
+│─────────────────────────────────│
+│ + display_info(): str           │
+│ + apply_discount(percentage)    │
+│ + is_available(amount): bool    │
+│ + reduce_stock(amount): bool    │
+└─────────────────────────────────┘
+           ▲
+           │
+           │
+┌──────────┴──────────┬──────────────────┐
+│                     │                  │
+│    Smartphone       │     Laptop       │     Tablet
+│─────────────────────│──────────────────│─────────────────
+│ - screen_size: float│ - ram_size: int  │ - screen_res: str
+│ - battery_life: int │ - processor: float│ - weight: int
+│─────────────────────│──────────────────│─────────────────
+│ + make_call()       │ + run_program()  │ + browse_internet()
+│ + install_app()     │ + use_keyboard() │ + use_touchscreen()
+└─────────────────────┴──────────────────┴─────────────────
+
+┌─────────────────────────────────┐
+│             Cart                │
+│─────────────────────────────────│
+│ - items: list                   │
+│ - total_price: float            │
+│─────────────────────────────────│
+│ + add_device(device, amount)    │
+│ + get_total_price(): float      │
+│ + print_items()                 │
+│ + checkout()                    │
+└─────────────────────────────────┘
